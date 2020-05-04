@@ -1,0 +1,46 @@
+10-1-41: quoi  le nombre de deces est 360
+10-7-52 le personne comme le chien
+11-5-50: nizar selmi est bon ingenieur dans le domaine informatique;
+12-8-55: montassar est bon enseignant professionnel dans ce domaine
+
+
+String m="ex3.txt";
+				File f=new File(m);
+				try
+				{
+					
+					FileReader fi=new FileReader(f);
+					BufferedReader b=new BufferedReader(fi);
+					String l;
+					o d=new o();
+					d.setVisible(true);
+				String j=textField.getText();
+        			System.out.print(j);	
+					while((l=b.readLine())!=null)
+					{
+                       
+                        
+						
+						 String lire="";
+					    
+					 for(int i=0;i<7;i++)
+					 {
+					      lire += "" + l.charAt(i);
+					    
+					     
+					 }
+					 if(j.equals(lire)) {
+						  
+							d.txtF.setText(l);
+					 }
+					
+			
+					
+					}
+				}
+				catch(FileNotFoundException e)
+				{
+					System.err.print("not found");
+				}
+				catch (Exception e) {
+					e.printStackTrace();}
